@@ -31,33 +31,33 @@
 		</StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="复杂布局" Margin="0,0,0,15">
+<local:MyCard Title="常用网站" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
-        <local:MyHint Margin="0,0,0,7" IsWarn="False"
-                   Text="下面的按钮列举了全部 6 种 EventType 作为示例。" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                   Text="你需要用到 StackPanel 在一横行里塞下多个按钮，你可以仅在这个教学卡片的基础上稍作调整，来实现自己的按钮布局。" />
+                   Text="这下面是6个常用软件。" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
-                   Text="如果你要实现更复杂的布局，你必须使用 Grid 等控件。多百度吧……谷歌也行。" />
+                   Text="你可以点击按钮来进入该网站。" />
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="请注意你是否联网。" />
       
         <!-- 这是第一行 -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
-                   Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+                   Text="MC官网" EventType="打开网页" EventData="https://www.minecraft.net/" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="进入 Hypixel" EventType="打开网页" EventData="1.16.3|mc.hypixel.net" ToolTip="使用 Minecraft 1.16.3 进入 Hypixel" />
+                   Text="MCBBS" EventType="打开网页" EventData="https://www.mcbbs.net/" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="打开画图" EventType="打开网页" EventData="mspaint.exe" />
+                   Text="PCL2帮助站" EventType="打开网页" EventData="https://pcl2-help.gitee.io/" />
         </StackPanel>
       
         <!-- 这是第二行 -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
-                   Text="复制召唤命令" EventType="打开网页" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="这条 Minecraft 命令会在每个玩家头顶召唤一只苦力怕！" />
+                   Text="百度" EventType="打开网页" EventData="https://www.baidu.com/"/>
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="刷新主页" EventType="打开网页" ToolTip="这通常用于联网更新主页时刷新信息，对本地文件没啥用" />
+                   Text="B站" EventType="打开网页" EventData="https://www.bilibili.com/" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="下载作者的头像" EventType="打开网页" EventData="https://www.mcbbs.net/uc_server/data/avatar/000/14/51/06_avatar_small.jpg?ts=1471402592" />
+                   Text="GitHub" EventType="打开网页" EventData="https://www.github.com/" />
         </StackPanel>
       
     </StackPanel>
